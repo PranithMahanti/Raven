@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Blog | Pranith Mahanti
+{% endblock %}
+
+{% block content%}
+<div class="all-posts">
+    <h1>Blog.</h1>
+    <div class="topics-sec">
+        <a href="/blog">All</a> |
+        <a href="/topic/Python">Python</a> |
+        <a href="/topic/Linux">Linux</a> |
+        <a href="/topic/Tutorials">Tutorials</a> |
+        <a href="/topic/Works">Works</a>
+    </div>
+    {% for i in item %}
+        <ul>
+            <li>
+                <h2><a href="/post/{{i.link_title}}">{{i.title}}</a></h2>
+                <h4>{{i.desc}}</h4>
+                <h5>{{i.date}}</h5>
+            </li>
+        </ul>
+    {% endfor %}
+</div>
+{% endblock %}

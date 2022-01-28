@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="shortcut icon" href="{% static 'M.ico' %}">
+
+    <link rel="stylesheet" href="{% static 'css\styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css\home.css' %}">
+    <link rel="stylesheet" href="{% static 'css\blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css\post.css' %}">
+    <link rel="stylesheet" href="{% static 'css\edit.css' %}">
+    <link rel="stylesheet" href="{% static 'css\contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css\thank-you.css' %}">
+
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:900' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-title">Pranith Mahanti.</div>
+        <div class="navbar">
+            <div class="hamburger">
+                <div class="line l1"></div>
+                <div class="line l2"></div>
+                <div class="line l3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/topic/Tutorials">Tutorials</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/about-me/">About Me </a></li>
+            </ul>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <div class="content">
+            <h2>About Me</h2>
+            <h3>
+                I am <a href="mailto:pranithmahanti@gmail.com" class="mailto-link">@Pranith Mahanti</a><br>
+            </h3>
+            <h4>
+                <br>I love to learn and make new things.
+                <br>I am a programmer and I also work as a freelancer.
+            </h4>
+            <h4>Have some questions?</h4>
+            <a href="/contact" class="abt-contact">Get in touch...</a>
+        </div>
+        <div class="M">M</div>
+    </footer>
+
+    <script src="{% static 'js\script.js' %}"></script>
+</body>
+</html>

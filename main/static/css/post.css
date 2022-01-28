@@ -1,0 +1,71 @@
+.whole-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.title-section {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #5AB9EA;
+    display: flex;
+    font-family: BioRhyme, sans-serif;
+    font-size: 3.5em;
+    font-weight: 900;
+}
+
+.post-data {
+    width: 70%;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    align-items: center;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 1.25em;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.topics {
+    background-color: #43C59E;
+    width: 70%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Inter, sans-serif;
+}
+
+.topics h4 {
+    font-size: 3em;
+    font-weight: 700;
+    padding: 100px 0;
+    text-align: left;
+    width: 90%;
+}
+
+.topics h5 {
+    position: absolute;
+    right: 20%;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.pb {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: left;
+    width: 70%;
+    font-family: Inter, sans-serif;
+}

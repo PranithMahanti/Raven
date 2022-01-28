@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{title}} | Pranith Mahanti
+{% endblock %}
+
+{% block content%}
+<div class="whole-post">
+    <div class="title-section">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="post-data">
+        <h4>{{ data|safe }}</h4>
+    </div>
+    <div class="pb">Published In:</div>
+    <div class="topics">
+        <h4>{{topics}}</h4>
+        <h5>{{date}}</h5>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

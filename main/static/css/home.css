@@ -1,0 +1,125 @@
+.section1 {
+    width: 100%;
+    height: 80vh;
+    background-color: #5AB9EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ml1 {
+  font-weight: 900;
+  font-size: 8em;
+  font-family: Montserrat, sans-serif;
+  z-index: 0;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
+
+.section2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+.section2 h1 {
+    padding-top: 50px;
+    width: 100%;
+    text-align: left;
+    padding-left: 20%;
+    font-weight: 900;
+    font-size: 6.75em;
+    font-family: "Inter", sans-serif;
+    text-decoration: underline;
+}
+
+.p1, .p2, .p3 {
+    background-color: #64B6AC;
+    width: 80%;
+    min-height: 200px;
+    text-align: center;
+    padding: 50px 0;
+    font-weight: 600;
+    font-size: 2em;
+    font-family: "Inter", sans-serif;
+    align-items: center;
+}
+
+.p1 h2 {
+    margin-top: 50px;
+}
+
+.p1 h2, .p2 h2, .p3 h2 {
+    padding-bottom: 50px;
+}
+
+.p1 h4, .p2 h4, .p3 h4 {
+    font-weight: 400;
+    font-size: 0.5em;
+
+}
+
+.p2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.post1, .post2 {
+    background-color: #D0DB97;
+    flex-grow: 1;
+    padding: 50px 0;
+    min-height: 200px;
+}
+
+.post2 {
+    background-color: #6D72C3;
+}
+
+.section2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.section2 a:hover {
+    text-decoration: underline;
+}
+
+.p3 {
+    padding-top: 10px;
+}
+
+.p3 h2 {
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
