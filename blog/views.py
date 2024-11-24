@@ -1,4 +1,5 @@
-from django.shortcuts import render
+import markdown
+
 from django.template import loader
 from django.http import HttpResponse
 
@@ -31,7 +32,9 @@ def blog(request):
     return HttpResponse(template.render(context, request))
 
 def post(request, link):
+    md = markdown.Markdown(extensions=["fenced_code"])
     post = Post.objects.filter(link=link.strip())[0]
+    post.post = md.convert(post.post)
     template = loader.get_template("blog/post.html")
     context = {
         "post": post,

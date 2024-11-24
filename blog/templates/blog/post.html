@@ -9,8 +9,10 @@
         <link rel="icon" href="./favicon.ico" type="image/x-icon">
     </head>
     <body>
-        {{ post.title }}
-        {{ post.post }}
-        {{ post.date }}
+        <p>
+            {{ post.title }}
+            {{ post.post | safe}}
+            {{ post.date }}
+        </p>
     </body>
 </html>
